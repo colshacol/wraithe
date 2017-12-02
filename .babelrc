@@ -1,0 +1,45 @@
+{
+	"env": {
+		"development": {
+			"presets": [
+				"env",
+				"stage-0",
+				"react",
+				"flow"
+			],
+			"plugins": [
+				"transform-inline-environment-variables",
+				"transform-react-display-name",
+				"transform-decorators",
+				[
+					"transform-class-properties",
+					{ "loose": true }
+				],
+				"transform-optional-chaining",
+				"jsx-control-statements",
+				"react-html-attrs",
+				"sitrep",
+				[
+					"webpack-alias",
+					{
+						"config": "${PWD}/webpack/dev.js"
+					}
+				],
+				[
+					"flow-runtime",
+					{
+						"assert": true,
+						"annotate": true
+					}
+				],
+				[
+					"react-css-modules",
+					{
+						"generateScopedName": "[name]_[local]",
+						"context": "./source/"
+					}
+				]
+			]
+		}
+	}
+}

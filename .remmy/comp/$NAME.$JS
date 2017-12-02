@@ -1,0 +1,12 @@
+import React from 'react'
+import './styles/$NAME.$CSS'
+
+const $NAME = (props: PropsT) => {
+	return (
+		<div styleName='$NAME'>
+
+		</div>
+	)
+}
+
+export default $NAME

@@ -1,0 +1,32 @@
+.Event {
+	margin: 2.4rem auto 0.8rem;
+	padding: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	border: 1.2px dashed var(--color-light-0);
+	width: 94%;
+	border-radius: 2px;
+	flex-shrink: 0;
+}
+
+.EventOptions {
+	display: flex;
+	align-items: center;
+}
+
+.RemoveIcon {
+	cursor: pointer;
+	opacity: 0.25;
+
+	&:hover {
+		opacity: 1;
+		color: var(--color-accent-3);
+	}
+}
+
+.top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.8rem;
+}

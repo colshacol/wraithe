@@ -1,0 +1,43 @@
+{
+  "name": "wraithe",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "wwwwwwraithe",
+  "homepage_url": "https://github.com/colshacol/wraithe",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+		"tabs",
+		"bookmarks",
+		"activeTab",
+		"webNavigation",
+		"contentSettings",
+		"activeTab",
+		"desktopCapture",
+		"pageCapture",
+		"windows"
+	],
+	"background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": ["js/script.js"],
+
+      "matches": [
+				"*://*.github.com/*",
+				"http://*/*",
+				"https://*/*"
+      ]
+    }
+	],
+	"browser_action": {
+		"default_title": "Google Mail",
+		"default_popup": "popup.html"
+	}
+}

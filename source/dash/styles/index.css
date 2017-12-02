@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--color-dark-0: rgb(18, 21, 37);
+	--color-dark-1: rgb(28, 31, 56);
+	--color-dark-2: rgb(73, 79, 107);
+	--color-dark-3: rgb(55, 62, 98);
+
+	--color-light-0: rgb(129, 143, 187);
+	--color-light-1: rgb(227, 228, 230);
+
+	--color-accent-0: rgb(75, 123, 244);
+	--color-accent-1: rgb(252, 148, 30);
+	--color-accent-2: rgb(146, 197, 79);
+	--color-accent-3: rgb(240, 60, 97);
+
+	--box-shadow-0: 0 -2px 1.6rem rgb(0, 0, 0, 0.75);
+
+	--white: rgb(255, 255, 255);
+	--color-white: #ffffff;
+
+	--font-main: 'Source Sans Pro', sans-serif;
+
+	background: var(--color-dark-1);
+	color: var(--color-light-0);
+	overflow-y: hidden;
+
+	font-size: 62.5%; /* 10px */
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.8rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+small {
+	font-size: 80%;
+}
+
+hr {
+	margin: 0.8rem 0;
+	background: var(--color-dark-0);
+	color: var(--color-dark-0);
+	border: 1px dotted var(--color-dark-0);
+}
+
+

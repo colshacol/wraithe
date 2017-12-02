@@ -1,0 +1,42 @@
+.Create {
+	position: relative;
+	overflow-y: hidden;
+	letter-spacing: 0.1rem;
+	font-size: 1.6rem;
+	display: flex;
+	width: 100%;
+}
+
+:global .headerIcon {
+	margin-left: 1.6rem;
+	color: var(--white);
+}
+
+.RecordIcon {
+	color: var(--white);
+}
+
+.PlayOrPauseIcon {
+	color: var(--white);
+}
+
+:global .__playing {
+	transform: scale(1.25);
+}
+
+:global .__recording {
+	transform: scale(1.25);
+}
+
+:global .headerIcon.active {
+	opacity: 1;
+}
+
+:global .headerIcon:not(.active) {
+	opacity: 0.25;
+}
+
+.ClearIcon {
+	color: var(--white);
+}
+

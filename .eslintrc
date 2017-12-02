@@ -1,0 +1,21 @@
+{
+	"plugins": ["prettier"],
+	"parser": "babel-eslint",
+	"extends": ["prettier", "eslint:recommended"],
+
+	"rules": {
+		"prettier/prettier": [
+				1,
+				{
+					"printWidth": 90,
+					"tabWidth": 2,
+					"useTabs": true,
+					"semi": true,
+					"singleQuote": true,
+					"trailingComma": "none",
+					"bracketSpacing": true,
+					"jsxBracketSameLine": false
+				}
+		]
+	}
+}

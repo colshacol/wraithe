@@ -1,0 +1,31 @@
+:local .SelectorOptions {
+	padding: 1.2rem 0.8rem 0.4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.type .option {
+	// background: black;
+	margin-right: 0.8rem;
+}
+
+:global .selectableOption {
+	transition: all 0.2s;
+	opacity: 0.25;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(1.15);
+		color: var(--color-accent-1);
+	}
+}
+
+:global .selectedOption {
+	opacity: 1;
+}
+
+.helpers .option {
+	margin-left: 0.8rem;
+}

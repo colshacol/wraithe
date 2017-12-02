@@ -1,0 +1,125 @@
+.Main_Main {
+	width: 100%;
+	height: 100vh;
+	margin-left: 6.4rem;
+	position: relative;
+}.Header_Header {
+	width: 100%;
+	max-height: 7.2rem;
+	min-height: 7.2rem;
+	height: 7.2rem;
+	position: relative;
+	padding: 1.6rem 2.4rem;
+	background: var(--color-dark-3);
+	box-shadow: 0 -2px 1.6rem rgba(0, 0, 0, .75);
+	display: flex;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+}
+.Selector_Selector {
+	padding: 1.2rem;
+	background: var(--color-dark-2);
+}
+.SelectorOptions_SelectorOptions {
+	padding: 1.2rem;
+	background: var(--color-dark-2);
+}
+.SelectorWithOptions_SelectorWithOptions {
+	padding: 1.2rem;
+	background: var(--color-dark-2);
+}
+.EventType_EventType {
+	color: var(--color-accent-0);
+	padding: 0.8rem 0.8rem 0.8rem 0;
+}
+.Event_Event {
+	padding: 0.8rem 1.6rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.Event_EventOptions {
+	display: flex;
+	align-items: center;
+}
+
+.Event_RemoveIcon {
+	cursor: pointer;
+}
+
+.Event_top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.EventList_EventList {
+	overflow-y: scroll;
+	position: absolute;
+	top: 0;
+	left: 0;
+	// height: 100vh;
+	height: calc(100vh - 10rem);
+	max-height: calc(100vh - 10rem);
+	z-index: 9;
+	margin-top: 7.2rem;
+	width: 100%;
+}
+.Dashboard_Dashboard {
+	position: relative;
+	overflow-y: hidden;
+	letter-spacing: 0.1rem;
+	font-size: 1.6rem;
+	display: flex;
+}
+.Navbar_Navbar {
+	background: var(--color-dark-0);
+	width: 6.4rem;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--color-dark-0: rgb(17, 17, 25);
+	--color-dark-1: rgb(23, 24, 33);
+	--color-dark-2: #27293c;
+	--color-dark-3: rgb(40, 40, 57);
+	--color-accent-0: rgb(178, 92, 217);
+
+	--white: rgb(255, 255, 255);
+	--font-main: 'Source Sans Pro', sans-serif;
+
+	background: var(--color-dark-1);
+	color: var(--white);
+	overflow-y: hidden;
+
+	font-size: 62.5%; /* 10px */
+}
+
+h1 {
+	// margin: 0.8rem 0 1.6rem;
+}
+
+small {
+	font-size: 80%;
+}
+
+hr {
+	margin: 0.8rem 0;
+	background: var(--color-dark-0);
+	color: var(--color-dark-0);
+	border: 1px dotted var(--color-dark-0);
+}
+
+
+
+/*# sourceMappingURL=styles.css.map*/
